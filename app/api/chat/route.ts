@@ -18,6 +18,7 @@ export async function POST(req: Request) {
   const response = await openai.chat.completions.create({
     model: 'ft:gpt-3.5-turbo-0613:vercel::7tMs6IaF',
     stream: true,
+    temprature: 0.7,
     messages: [
       {
         role: 'system',
